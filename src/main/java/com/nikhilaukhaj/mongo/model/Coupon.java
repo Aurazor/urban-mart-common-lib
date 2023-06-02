@@ -1,11 +1,18 @@
 package com.nikhilaukhaj.mongo.model;
 
 import io.quarkus.mongodb.panache.common.MongoEntity;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.bson.types.ObjectId;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@RequiredArgsConstructor
 @MongoEntity(collection = "Coupon")
 public class Coupon {
-    public ObjectId _id;
     public String code;
     public double discount;
     public String validFrom;

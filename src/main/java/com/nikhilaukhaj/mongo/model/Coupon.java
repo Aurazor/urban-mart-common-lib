@@ -10,7 +10,6 @@ import org.bson.types.ObjectId;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @MongoEntity(collection = "Coupon")
 public class Coupon {
     public String code;

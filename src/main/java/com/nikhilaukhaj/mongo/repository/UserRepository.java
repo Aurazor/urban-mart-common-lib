@@ -4,8 +4,9 @@ import com.nikhilaukhaj.mongo.model.User;
 import io.quarkus.mongodb.panache.PanacheMongoRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 
-public class UserRepository<T extends User> implements PanacheMongoRepository<T> {
-    public User findByUsername(String username){
+
+public interface UserRepository<T extends User> extends PanacheMongoRepository<T> {
+    public default T findByUsername(String username){
         return find("username", username).firstResult();
     }
 

@@ -11,7 +11,6 @@ import org.bson.types.ObjectId;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @MongoEntity(collection = "order")
 public class Order {
     @BsonProperty("userId")

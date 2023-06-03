@@ -9,7 +9,6 @@ import org.bson.codecs.pojo.annotations.BsonProperty;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @MongoEntity(collection = "category")
 public class Category {
     @BsonProperty("name")

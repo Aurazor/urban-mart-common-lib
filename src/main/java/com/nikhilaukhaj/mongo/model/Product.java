@@ -11,7 +11,6 @@ import org.bson.types.ObjectId;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @MongoEntity(collection = "product")
 public class Product {
 

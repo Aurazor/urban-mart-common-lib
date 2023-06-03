@@ -10,7 +10,6 @@ import org.bson.types.ObjectId;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @MongoEntity(collection = "review")
 public class Review {
     public String userId;

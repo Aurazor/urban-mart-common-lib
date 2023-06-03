@@ -10,7 +10,6 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-@RequiredArgsConstructor
 @MongoEntity(collection = "seller")
 public class Seller extends User {
     @BsonProperty("businessName")

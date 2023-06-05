@@ -1,5 +1,6 @@
 package com.nikhilaukhaj.mongo.model;
 
+import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,7 @@ import org.bson.types.ObjectId;
 @Setter
 @NoArgsConstructor
 @MongoEntity(collection = "Coupon")
-public class Coupon {
+public class Coupon extends PanacheMongoEntity {
     public String code;
     public double discount;
     public String validFrom;

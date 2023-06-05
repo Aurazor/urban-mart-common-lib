@@ -9,7 +9,7 @@ import org.bson.codecs.pojo.annotations.BsonProperty;
 @Getter
 @Setter
 @NoArgsConstructor
-public class User  extends PanacheMongoEntity{
+public class User extends PanacheMongoEntity{
 
     @BsonProperty("name")
     public String name;

@@ -1,5 +1,6 @@
 package com.nikhilaukhaj.mongo.model;
 
+import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import org.bson.types.ObjectId;
 @Setter
 @NoArgsConstructor
 @MongoEntity(collection = "product")
-public class Product {
+public class Product extends PanacheMongoEntity {
 
     @BsonProperty("name")
     public String name;

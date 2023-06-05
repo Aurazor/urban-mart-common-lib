@@ -1,5 +1,6 @@
 package com.nikhilaukhaj.mongo.model;
 
+import io.quarkus.mongodb.panache.PanacheMongoEntity;
 import io.quarkus.mongodb.panache.common.MongoEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @MongoEntity(collection = "wishlist")
-public class WishList {
+public class WishList extends PanacheMongoEntity {
     public ObjectId userId;
     public List<Product> products;
 }
